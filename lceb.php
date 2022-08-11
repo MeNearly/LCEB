@@ -318,8 +318,6 @@ class LCEB {
   public function displayAllSolutions() {
     if (!$this->isSolved()) {
       echo "Pas de solution....".PHP_EOL;
-      if ($this->threshold!=0) {
-      }
       return;
     }
     $start=$this->getGraph()->getNode("Start","xylian\graph\LcebNode");
