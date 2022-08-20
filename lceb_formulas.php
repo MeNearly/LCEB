@@ -425,6 +425,9 @@ $interactive=$args['inter']??(!php_sapi_name());
 $interactive=boolval($interactive);
 $ajax=false;
 
+if (!$interactive)
+  ob_start();
+
 if (isset($args['ajax'])) {
   $ajax=true;
 } elseif (!$interactive) {
@@ -433,6 +436,7 @@ if (isset($args['ajax'])) {
 
 if (isset($args['delta'])) {
   $delta=$args['delta'];
+  $delta=($delta===false)?0:$delta;
   $interactive=false;
 } elseif (!$interactive) {
   $delta=$_REQUEST["delta"]??0;
@@ -455,10 +459,8 @@ if (isset($args['withPower'])) {
 foreach ($numbers as &$n) {
   $n=intval($n);
 }
-if (!$interactive)
-  ob_start();
 if (count($numbers)>6) {
-  echo "Trop de nombres à utiliser.... Maximum 7".PHP_EOL;
+  echo "Trop de nombres à utiliser.... Maximum 6".PHP_EOL;
   die();
 }
 $lceb=LCEB::initLCEB($target,$numbers,$opers);
