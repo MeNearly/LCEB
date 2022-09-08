@@ -5,7 +5,7 @@ namespace xylian\graph;
 ;##              GRAPH CONSTRUCTOR             ##
 ;#                                              #
 ;#                                              #
-;##     (c) 2019 MICHAUD Yannick & xylian      ##
+;##           (c) 2019 MICHAUD Yannick         ##
 ;###                                          ###
 ;################################################*/
 class Node {
