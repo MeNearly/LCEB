@@ -4,7 +4,13 @@ Le Compte Est Bon (PHP)
 ## Deux scripts PHP reposant sur ma classe \xylian\graph.
 
 Il s'agit d'une recherche **a priori** exhaustive dans l'arbre des possibilités.
-Chacun peut être lancé :
+L'algorithme peut trouver plusieurs solutions, mais :
+* Si le nombre d'opérations minimum est le maxmum possible (par exemple 5 pour 6 'tuiles'),
+  il ne renverra qu'un seule d'entre elles
+
+* Sinon, il renverra la plus courte ET la plus longue
+
+Chacun des scripts peut être lancé :
 * soit en ligne de commande ```php lceb*.php <target> {<number>} [-delta=N | -inter=1] [-withPower]```
 
   * Les premiers paramètres sont explicites, _inter_ signifie 'interactif' au cas où _delta_ n'est pas spécifié, et _withPower_ indique si l'on autorise l'opération *puissance*.
