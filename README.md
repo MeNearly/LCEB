@@ -26,4 +26,4 @@ Renvoie la ou les solutions avec une décomposition *pas-à-pas* des opérations
 * ```lceb_formulas.php```
 Renvoie la ou les solutions sous la forme d'une seule opération
 
-Une démo est visible [sur cette page](https://www.xylian.fr/LCEB).
+Une démo est visible [sur cette page](https://www.ksynet.fr/LCEB).
