@@ -5,7 +5,7 @@ Le Compte Est Bon (PHP)
 
 Il s'agit d'une recherche **a priori** exhaustive dans l'arbre des possibilités.
 L'algorithme peut trouver plusieurs solutions, mais :
-* Si le nombre d'opérations minimum est le maxmum possible (par exemple 5 pour 6 'tuiles'),
+* Si le nombre d'opérations minimum est le maximum possible (par exemple 5 pour 6 'tuiles'),
   il ne renverra qu'une seule d'entre elles
 
 * Sinon, il renverra la plus courte ET la plus longue
